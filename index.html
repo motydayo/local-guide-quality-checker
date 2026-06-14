@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A privacy-safe demo for checking local guide records before publication."
+    />
+    <title>Local Guide Quality Checker</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#">Fieldnote</a>
+      <a class="text-link" href="#about">How it works</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Open-source data quality demo</p>
+          <h1>Publish local information with confidence.</h1>
+          <p class="hero-copy">
+            Check completeness, verification status, and sensitive categories
+            before a directory record goes live.
+          </p>
+        </div>
+        <div class="hero-note">
+          <span>Safety rule</span>
+          <strong>Unverified records stay drafts.</strong>
+          <p>This demo uses fictional places only.</p>
+        </div>
+      </section>
+
+      <section class="dashboard" aria-labelledby="dashboard-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Quality overview</p>
+            <h2 id="dashboard-title">Publication dashboard</h2>
+          </div>
+          <button class="primary-button" id="add-record" type="button">
+            Add sample record
+          </button>
+        </div>
+
+        <div class="metrics" id="metrics" aria-live="polite"></div>
+        <div class="record-grid" id="record-grid"></div>
+      </section>
+
+      <section class="about" id="about">
+        <p class="eyebrow">What this demonstrates</p>
+        <h2>A small app with a serious guardrail.</h2>
+        <div class="about-grid">
+          <p>
+            The scoring logic is framework-free and independently tested. UI
+            rendering is kept separate from the publication rules.
+          </p>
+          <p>
+            Medical, childcare, legal, financial, care, and funeral records
+            need an additional verification before they can pass.
+          </p>
+          <p>
+            No real business details, credentials, analytics, or third-party
+            assets are included in this repository.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Local Guide Quality Checker</span>
+      <span>Built with HTML, CSS, and JavaScript.</span>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
