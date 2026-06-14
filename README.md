@@ -3,6 +3,8 @@
 A small, privacy-safe web application for checking local directory records
 before publication.
 
+[Open the live demo](https://motydayo.github.io/local-guide-quality-checker/)
+
 The demo turns a practical editorial rule into testable code:
 
 > Unverified or incomplete records stay as drafts.
